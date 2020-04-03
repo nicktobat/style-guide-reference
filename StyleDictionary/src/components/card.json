@@ -1,0 +1,75 @@
+{
+  "card" : {
+      "global" : {
+          "background-color" : { "value" : "{color.brand.light.primary.value}" },
+          "font-family" : { "value" : "Roboto, \"Helvetica Neue\", sans-serif" },
+          "border" : { 
+              "radius" : { "value" : "4px" }
+          }
+      },
+      "file" : {
+          "width" : { "value" : "128px" },
+          "box-shadow" : { "value" : "none !important" },
+          "img" : {
+              "height" : { "value" : "128px" },
+              "margin" : { "value" : "0 0 12px 0"}
+          },
+          "content" : {
+              "text-align" : { "value" : "center" },
+              "font-size" : { "value" : "{size.font.s.value}" },
+              "line-height" : { "value" : "20px" },
+              "padding" : { "value" : "0 8px 0 8px" }
+          }
+      },
+      "image" : {
+          "width" : { "value" : "128px" },
+          "box-shadow" : { "value" : "none !important" }
+      },
+      "product" : {
+          "width" : { "value" : "272px" },
+          "box-shadow" : { "value" : "0 2px 4px rgba(6,39,51,0.08)" },
+          "img" : {
+              "fit" : { "value" : "contain" },
+              "height" : { "value" : "200px" },
+              "width" : { "value" : "272px" }
+          },
+          "content" : {
+            "text-align" : { "value" : "center" },
+            "font-size" : { "value" : "{size.font.m.value}" },
+            "line-height" : { "value" : "24px" },
+            "padding" : { "value" : "0 16px 12px 16px" }
+          },
+          "sku" : {
+            "position" : { "value" : "absolute" },
+            "top" : { "value" : "{spacing.xxs.value}" },
+            "right" : { "value" : "{spacing.xxs.value}" },
+            "background-color" : { "value" : "{color.neutral.01.value}" },
+            "height" : { "value" : "10px" },
+            "padding" : { "value" : "{spacing.xxs.value}" },
+            "font-size" : { "value" : "{size.font.xxs.value}" },
+            "text-align" : { "value" : "right" },
+            "line-height" : { "value" : "{size.font.xxs.value}" }
+          }
+      },
+      "report" : {
+        "width" : { "value" : "272px" },
+        "box-shadow" : { "value" : "none !important" },
+        "img" : {
+            "height" : { "value" : "160px" },
+            "width" : { "value" : "270px" },
+            "border-radius" : { "value" : "3.25px 3.25px 0 0" }
+        },
+        "content" : {
+          "text-align" : { "value" : "left" },
+          "font-size" : { "value" : "{size.font.m.value}" },
+          "line-height" : { "value" : "24px" },
+          "padding" : { "value" : "0 16px 12px 16px" }
+        },
+        "metadata" : {
+          "color" : { "value" : "{color.font.secondary.value}" },
+          "font-size" : { "value" : "{size.font.s.value}" },
+          "line-height" : { "value" : "20px" }
+        }
+      }
+  }
+}

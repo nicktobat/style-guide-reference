@@ -1,0 +1,32 @@
+{
+  "search" : {
+    "display" : { "value" : "flex" },
+    "font-size" : { "value" : "{size.font.m.value}" },
+    "letter-spacing" : { "value" : "0" },
+    "font-weight" : { "value" : "{weight.font.regular.value}" },
+    "padding" : { "value" : "0 {spacing.xs.value}" },
+    "min-width" : { "value" : "96px !important" },
+    "text-transform" : { "value" : "uppercase" },
+    "background-color" : { "value" : "{color.neutral.00.value}" },
+    "border" : { 
+      "radius" : { "value" : "4px" },
+      "width" : { "value" : "1px" },
+      "color" : { "value" : "{color.neutral.02.value}" },
+      "style" : { "value" : "solid" }
+    },
+    "input" : {
+      "height" : { "value" : "56px" },
+      "line-height" : { "value" : "54px" },
+      "icon" : {
+        "padding" : { "value" : "{spacing.xs.value} 12px" }
+      }
+    },
+    "toolbar" : {
+      "height" : { "value" : "48px" },
+      "line-height" : { "value" : "46px" },
+      "icon" : {
+        "padding" : { "value" : "12px" }
+      }
+    }
+  }
+}

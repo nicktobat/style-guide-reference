@@ -1,0 +1,53 @@
+{
+  "color": {
+    "brand": {
+      "blue": {
+        "primary" : { "value": "#0055FF" },
+        "secondary": { "value": "rgba(0,85,255,0.04)" }
+      },
+      "dark": {
+        "primary" : { "value": "#062A37" },
+        "secondary": { "value": "rgba(6,42,55,0.56)" }
+      },
+      "light": {
+        "primary" : { "value": "#FFFFFF" },
+        "secondary": { "value": "rgba(255,255,255,0.64)" }
+      }
+    },
+    "icon": {
+      "default": { "value": "#8596A4" },
+      "active": { "value": "#0055FF" },
+      "white": { "value": "#FFFFFF" },
+      "disabled": { "value": "#EEF2F5" }
+    },
+    "neutral": {
+      "empty": { "value": "transparent" },
+      "00": { "value": "#FCFCFD" },
+      "01": { "value": "#EEF2F5" },
+      "02": { "value": "#D1D8DE" },
+      "03": { "value": "#8596A4" },
+      "04": { "value": "#062A37" },
+      "tooltip-background": { "value": "#616161" },
+      "snackbar-background": { "value": "rgba(0,0,0,0.87)" }
+    },
+    "notification": {
+      "primary": { "value": "#FF3366" }
+    },
+    "warning": {
+      "primary": { "value": "#FAAA0A" },
+      "secondary": { "value": "#FCCF76" },
+      "tertiary": { "value": "#FFFCF5" }
+    },
+    "positive": {
+      "primary": { "value": "#3ED078" },
+      "secondary": { "value": "#93E4B3" },
+      "tertiary": { "value": "#F7FDFA" }
+    },
+    "negative": {
+      "primary": { "value": "#FD4614" },
+      "secondary": { "value": "#FE977B" },
+      "tertiary": { "value": "#FFF8F6" }
+    },
+    "hoverlay": { "value": "rgba(37,44,58,0.9)" }
+  }
+}

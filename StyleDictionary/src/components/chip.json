@@ -1,0 +1,31 @@
+{
+  "chip" : {
+      "global" : {
+          "color" : { "value" : "{color.font.primary.value}" },
+          "background-color" : { "value" : "{color.brand.light.primary.value}" },
+          "font-size" : { "value" : "{size.font.s.value}" },
+          "font-family" : { "value" : "Roboto, \"Helvetica Neue\", sans-serif" },
+          "font-weight" : { "value" : "400" },
+          "text-align" : { "value" : "center" },
+          "height" : { "value" : "32px" },
+          "border" : { 
+              "radius" : { "value" : "16px" },
+              "color" : { "value" : "{color.neutral.02.value}" },
+              "width" : { "value" : "1px" },
+              "style" : { "value" : "solid" }
+          }
+      },
+      "text-only" : {
+          
+      },
+      "text-icon" : {
+          
+      },
+      "text-close" : {
+          
+      },
+      "text-icon-close" : {
+          
+      }
+  }
+}

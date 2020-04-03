@@ -1,0 +1,13 @@
+{
+  "color": {
+    "font": {
+      "primary"  : { "value": "{color.neutral.04.value}" },
+      "secondary": { "value": "{color.neutral.03.value}" },
+      "disabled" : { "value": "{color.neutral.02.value}" },
+      "brand" : { "value": "{color.brand.blue.primary.value}" },
+      "white" : { "value": "{color.brand.light.primary.value}" },
+      "positive" : { "value": "{color.positive.primary.value}" },
+      "negative" : { "value": "{color.negative.primary.value}" }
+    }
+  }
+}

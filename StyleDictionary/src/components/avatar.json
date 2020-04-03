@@ -1,0 +1,26 @@
+{
+  "avatar" : {
+    "height" : { "value" : "{spacing.l.value}" },
+    "width" : { "value" : "{spacing.l.value}" },
+    "border" : {
+      "radius" : { "value" : "50%" },
+      "color" : { "value" : "{color.brand.light.primary.value}" },
+      "width" : { "value" : "1px" },
+      "style" : { "value" : "solid" }
+    },
+    "badge" : {
+      "height" : { "value" : "12px" },
+      "width" : { "value" : "12px" },
+      "line-height" : { "value" : "12px" },
+      "background" : { "value" : "{color.positive.primary.value}" },
+      "position" : { "value" : "-1px" },
+      "box-shadow" : { "value" : "inset 0 0 0 1px {color.brand.light.primary.value}" }
+    },
+    "item" : {
+      "border" : {
+        "border" : { "value" : "1px solid {color.neutral.02.value}" },
+        "radius" : { "value" : "0" }
+      }
+    }
+  }
+}

@@ -1,0 +1,269 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+
+$bb-blue: (
+  50 : #e0ebff,
+  100 : #b3ccff,
+  200 : #80aaff,
+  300 : #4d88ff,
+  400 : #266fff,
+  500 : #0055ff,
+  600 : #004eff,
+  700 : #0044ff,
+  800 : #003bff,
+  900 : #002aff,
+  A100 : #ffffff,
+  A200 : #f2f4ff,
+  A400 : #bfc6ff,
+  A700 : #a6b0ff,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+$bb-black: (
+  50 : #e1e5e7,
+  100 : #b4bfc3,
+  200 : #83959b,
+  300 : #516a73,
+  400 : #2b4a55,
+  500 : #062a37,
+  600 : #052531,
+  700 : #041f2a,
+  800 : #031923,
+  900 : #020f16,
+  A100 : #56b2ff,
+  A200 : #239bff,
+  A400 : #0082ef,
+  A700 : #0074d5,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #ffffff,
+      A700 : #ffffff,
+  )
+);
+
+$bb-primary: mat-palette($bb-blue);
+$bb-accent: mat-palette($bb-black, 500, 900, A100);
+$bb-warn: mat-palette($mat-red);
+
+$bb-theme: mat-light-theme($bb-primary, $bb-accent, $bb-warn);
+
+@mixin mat-ripple-theme($bb-theme) {
+  .mat-ripple-element {
+    background-color: rgba(227, 235, 255, .4);
+  }
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+
+@include angular-material-theme($bb-theme);
+
+@include mat-ripple-theme($bb-theme);
+
+@import 'StyleDictionary/build/scss/variables';
+
+/****  --------------------
+-----  GLOBAL STYLES  -----
+--------------------  ****/
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: $color-neutral-00; box-sizing: border-box; }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+svg.material-icons {
+    height: 24px;
+    width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+}
+
+.item-group > * {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+.item-group-16 > * {
+  &:not(:last-child) {
+      margin-right: 16px;
+  }
+}
+
+/****  --------------------
+-----  TYPOGRAPHY     -----
+--------------------  ****/
+
+/** headings **/
+@mixin h1() {
+  font-size: $size-font-xl;
+  font-weight: $weight-font-light;
+  color: $color-font-primary;
+}
+@mixin h2() {
+  font-size: $size-font-l;
+  font-weight: $weight-font-light;
+  color: $color-font-primary;
+}
+@mixin h3() {
+  font-size: $size-font-l;
+  font-weight: $weight-font-light;
+  color: $color-font-secondary;
+}
+@mixin h4() {
+  font-size: $size-font-s;
+  font-weight: $weight-font-medium;
+  color: $color-font-secondary;
+}
+
+h1{
+  @include h1;
+}
+h2{
+  @include h2;
+}
+h3{
+  @include h3;
+}
+h4{
+  @include h4;
+}
+
+
+/****  --------------------
+-----  MAT OVERRIDES  -----
+--------------------  ****/
+
+div.mat-simple-snackbar-action button.mat-button {
+  line-height: 36px;
+}
+snack-bar-container.mat-snack-bar-container {
+  .mat-simple-snackbar-action {
+    color: $color-brand-blue-primary;
+  }
+}
+
+button.mat-icon-button mat-icon.mat-icon {
+  line-height: 22px;
+}
+
+mat-icon.mat-icon {
+    color: $color-icon-default;
+    cursor: pointer;
+}
+
+mat-chip.mat-chip-with-leading-icon mat-icon.mat-icon:not(.mat-chip-trailing-icon) {
+    margin-left: -8px;
+    padding-right: 8px;
+}
+
+.mat-chip.mat-standard-chip .mat-chip-remove {
+    color: $color-icon-default;
+    opacity: 1;
+}
+
+.mat-form-field-underline {
+    background-color: $color-neutral-02 !important;
+}
+.mat-form-field-outline {
+    color: $color-neutral-02 !important;
+}
+mat-form-field.mat-form-field {
+    &:hover {
+        div.mat-form-field-outline {
+            color: $color-brand-blue-primary !important;
+        }
+    }
+    &.mat-focused {
+        div.mat-form-field-outline {
+            color: $color-brand-blue-primary !important;
+        }
+    }
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    font-size: $size-font-s;
+    color: $color-font-secondary;
+}
+
+mat-form-field.mat-form-field-disabled {
+  div.mat-form-field-outline {
+    color: $color-icon-disabled !important;
+  }
+  &:hover {
+    div.mat-form-field-outline {
+        color: $color-icon-disabled !important;
+    }
+  }
+}
+
+mat-hint.assistive-text {
+    display: block;
+    color: $color-font-secondary;
+    font-size: $size-font-xs;
+    letter-spacing: 0.4px;
+    margin: 4px 0 0 16px;
+}
+
+.mat-menu-panel {
+    margin-top: 2px;
+}
+
+button.mat-menu-item {
+    color: $color-font-primary;
+    text-transform: capitalize;
+}
+
+mat-divider {
+    width: 100%;
+    margin-bottom: 56px;
+    padding-bottom: 24px;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: $color-brand-blue-primary;
+}
+
+mat-sidenav-container.mat-drawer-container {
+    height: 100%;
+}
