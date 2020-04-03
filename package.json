@@ -1,0 +1,23 @@
+{
+  "name": "style-guide-reference",
+  "version": "1.0.0",
+  "description": "css reference files for BB Design System",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicktobat/style-guide-reference.git"
+  },
+  "author": "nick tobat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicktobat/style-guide-reference/issues"
+  },
+  "homepage": "https://github.com/nicktobat/style-guide-reference#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

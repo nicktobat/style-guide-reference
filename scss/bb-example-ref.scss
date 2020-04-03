@@ -1,0 +1,584 @@
+// Variables
+// Do not edit directly
+
+$avatar-height: 40px;
+$avatar-width: 40px;
+$avatar-border-radius: 50%;
+$avatar-border-color: #ffffff;
+$avatar-border-width: 1px;
+$avatar-border-style: solid;
+$avatar-badge-height: 12px;
+$avatar-badge-width: 12px;
+$avatar-badge-line-height: 12px;
+$avatar-badge-background: #3ed078;
+$avatar-badge-position: -1px;
+$avatar-badge-box-shadow: inset 0 0 0 1px #ffffff;
+$avatar-item-border-border: 1px solid #d1d8de;
+$avatar-item-border-radius: 0;
+$button-global-font-family: Roboto, "Helvetica Neue", sans-serif;
+$button-global-font-size: 14px;
+$button-global-letter-spacing: 0;
+$button-global-font-weight: 500;
+$button-global-text-align: center;
+$button-global-height: 48px;
+$button-global-line-height: 48px;
+$button-global-padding: 0 16px;
+$button-global-min-width: 96px !important;
+$button-global-text-transform: uppercase;
+$button-global-border-radius: 4px;
+$button-primary-background-color: #0055ff;
+$button-primary-font-color: #ffffff;
+$button-secondary-background-color: rgba(0, 0, 0, 0);
+$button-secondary-font-color: #062a37;
+$button-secondary-padding: 0 8px;
+$button-tertiary-background-color: rgba(0, 85, 255, 0.04);
+$button-tertiary-font-color: #0055ff;
+$button-outlined-background-color: rgba(0, 0, 0, 0);
+$button-outlined-line-height: 44px;
+$button-outlined-font-color: #8596a4;
+$button-outlined-border-width: 2px;
+$button-outlined-border-color: #d1d8de;
+$button-disabled-background-color: #eef2f5 !important;
+$button-disabled-font-color: #d1d8de !important;
+$button-icon-height: 32px;
+$button-icon-line-height: 32px;
+$button-icon-padding: 0 8px;
+$button-icon-text-align: left;
+$button-icon-display: flex;
+$button-icon-align-y: center;
+$button-icon-margin: 8px;
+$button-icon-color: #0055ff;
+$button-toolbar-font-weight: 400;
+$button-toolbar-font-size: 16px;
+$button-toolbar-text-align: center;
+$button-toolbar-height: 48px;
+$button-toolbar-text-transform: capitalize;
+$button-toolbar-padding: 0;
+$button-toolbar-min-width: 48px;
+$button-toolbar-box-shadow: inset 0 0 0 1px #d1d8de !important;
+$button-toolbar-border-radius: 4px;
+$button-toolbar-border-width: 1px;
+$button-toolbar-border-color: #d1d8de;
+$button-toolbar-border-style: solid;
+$button-toolbar-pivot-padding-left: 12px;
+$button-toolbar-icon-border-left: inset 1px 0 0 #d1d8de !important;;
+$button-toolbar-icon-border-right: inset -1px 0 0 #d1d8de !important;;
+$button-toolbar-icon-margin-top: -2px;
+$button-toolbar-icon-margin-left: 12px;
+$button-toolbar-icon-margin-right: 12px;
+$button-toolbar-icon-padding: 12px;
+$card-global-background-color: #ffffff;
+$card-global-font-family: Roboto, "Helvetica Neue", sans-serif;
+$card-global-border-radius: 4px;
+$card-file-width: 128px;
+$card-file-box-shadow: none !important;
+$card-file-img-height: 128px;
+$card-file-img-margin: 0 0 12px 0;
+$card-file-content-text-align: center;
+$card-file-content-font-size: 14px;
+$card-file-content-line-height: 20px;
+$card-file-content-padding: 0 8px 0 8px;
+$card-image-width: 128px;
+$card-image-box-shadow: none !important;
+$card-product-width: 272px;
+$card-product-box-shadow: 0 2px 4px rgba(6,39,51,0.08);
+$card-product-img-fit: contain;
+$card-product-img-height: 200px;
+$card-product-img-width: 272px;
+$card-product-content-text-align: center;
+$card-product-content-font-size: 16px;
+$card-product-content-line-height: 24px;
+$card-product-content-padding: 0 16px 12px 16px;
+$card-product-sku-position: absolute;
+$card-product-sku-top: 8px;
+$card-product-sku-right: 8px;
+$card-product-sku-background-color: #eef2f5;
+$card-product-sku-height: 10px;
+$card-product-sku-padding: 8px;
+$card-product-sku-font-size: 10px;
+$card-product-sku-text-align: right;
+$card-product-sku-line-height: 10px;
+$card-report-width: 272px;
+$card-report-box-shadow: none !important;
+$card-report-img-height: 160px;
+$card-report-img-width: 270px;
+$card-report-img-border-radius: 3.25px 3.25px 0 0;
+$card-report-content-text-align: left;
+$card-report-content-font-size: 16px;
+$card-report-content-line-height: 24px;
+$card-report-content-padding: 0 16px 12px 16px;
+$card-report-metadata-color: #8596a4;
+$card-report-metadata-font-size: 14px;
+$card-report-metadata-line-height: 20px;
+$chip-global-color: #062a37;
+$chip-global-background-color: #ffffff;
+$chip-global-font-size: 14px;
+$chip-global-font-family: Roboto, "Helvetica Neue", sans-serif;
+$chip-global-font-weight: 400;
+$chip-global-text-align: center;
+$chip-global-height: 32px;
+$chip-global-border-radius: 16px;
+$chip-global-border-color: #d1d8de;
+$chip-global-border-width: 1px;
+$chip-global-border-style: solid;
+$search-display: flex;
+$search-font-size: 16px;
+$search-letter-spacing: 0;
+$search-font-weight: 400;
+$search-padding: 0 16px;
+$search-min-width: 96px !important;
+$search-text-transform: uppercase;
+$search-background-color: #fcfcfd;
+$search-border-radius: 4px;
+$search-border-width: 1px;
+$search-border-color: #d1d8de;
+$search-border-style: solid;
+$search-input-height: 56px;
+$search-input-line-height: 54px;
+$search-input-icon-padding: 16px 12px;
+$search-toolbar-height: 48px;
+$search-toolbar-line-height: 46px;
+$search-toolbar-icon-padding: 12px;
+$color-brand-blue-primary: #0055ff;
+$color-brand-blue-secondary: rgba(0, 85, 255, 0.04);
+$color-brand-dark-primary: #062a37;
+$color-brand-dark-secondary: rgba(6, 42, 55, 0.56);
+$color-brand-light-primary: #ffffff;
+$color-brand-light-secondary: rgba(255, 255, 255, 0.64);
+$color-icon-default: #8596a4;
+$color-icon-active: #0055ff;
+$color-icon-white: #ffffff;
+$color-icon-disabled: #eef2f5;
+$color-neutral-empty: rgba(0, 0, 0, 0);
+$color-neutral-00: #fcfcfd;
+$color-neutral-01: #eef2f5;
+$color-neutral-02: #d1d8de;
+$color-neutral-03: #8596a4;
+$color-neutral-04: #062a37;
+$color-neutral-tooltip-background: #616161;
+$color-neutral-snackbar-background: rgba(0, 0, 0, 0.87);
+$color-notification-primary: #ff3366;
+$color-warning-primary: #faaa0a;
+$color-warning-secondary: #fccf76;
+$color-warning-tertiary: #fffcf5;
+$color-positive-primary: #3ed078;
+$color-positive-secondary: #93e4b3;
+$color-positive-tertiary: #f7fdfa;
+$color-negative-primary: #fd4614;
+$color-negative-secondary: #fe977b;
+$color-negative-tertiary: #fff8f6;
+$color-hoverlay: rgba(37, 44, 58, 0.9);
+$color-font-primary: #062a37;
+$color-font-secondary: #8596a4;
+$color-font-disabled: #d1d8de;
+$color-font-brand: #0055ff;
+$color-font-white: #ffffff;
+$color-font-positive: #3ed078;
+$color-font-negative: #fd4614;
+$size-font-xxs: 10px;
+$size-font-xs: 12px;
+$size-font-s: 14px;
+$size-font-m: 16px;
+$size-font-l: 20px;
+$size-font-xl: 32px;
+$size-font-xxl: 48px;
+$size-font-base: 16px; // the base size of the font
+$size-icon-small: 10px;
+$size-icon-medium: 16px;
+$size-icon-large: 24px;
+$size-icon-base: 24px; // the base size of icons
+$weight-font-thin: 100;
+$weight-font-light: 300;
+$weight-font-regular: 400;
+$weight-font-medium: 500;
+$weight-font-bold: 700;
+$weight-font-black: 800;
+$spacing-xxxs: 4px; // the smallest spacing increment
+$spacing-xxs: 8px; // the default spacing increment
+$spacing-xs: 16px;
+$spacing-s: 24px;
+$spacing-m: 32px;
+$spacing-l: 40px;
+$spacing-xl: 48px;
+$spacing-xxl: 64px;
+$spacing-xxxl: 80px;
+$spacing-base: 8px;
+
+/****  --------------------
+-----  GLOBAL STYLES  -----
+--------------------  ****/
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: $color-neutral-00; box-sizing: border-box; }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+svg.material-icons {
+    height: 24px;
+    width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+}
+
+.item-group > * {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+.item-group-16 > * {
+  &:not(:last-child) {
+      margin-right: 16px;
+  }
+}
+
+/****  --------------------
+-----  TYPOGRAPHY     -----
+--------------------  ****/
+
+/** headings **/
+@mixin h1() {
+  font-size: $size-font-xl;
+  font-weight: $weight-font-light;
+  color: $color-font-primary;
+}
+@mixin h2() {
+  font-size: $size-font-l;
+  font-weight: $weight-font-light;
+  color: $color-font-primary;
+}
+@mixin h3() {
+  font-size: $size-font-l;
+  font-weight: $weight-font-light;
+  color: $color-font-secondary;
+}
+@mixin h4() {
+  font-size: $size-font-s;
+  font-weight: $weight-font-medium;
+  color: $color-font-secondary;
+}
+
+h1{
+  @include h1;
+}
+h2{
+  @include h2;
+}
+h3{
+  @include h3;
+}
+h4{
+  @include h4;
+}
+
+
+/****  --------------------
+-----  MAT OVERRIDES  -----
+--------------------  ****/
+
+div.mat-simple-snackbar-action button.mat-button {
+  line-height: 36px;
+}
+snack-bar-container.mat-snack-bar-container {
+  .mat-simple-snackbar-action {
+    color: $color-brand-blue-primary;
+  }
+}
+
+button.mat-icon-button mat-icon.mat-icon {
+  line-height: 22px;
+}
+
+mat-icon.mat-icon {
+    color: $color-icon-default;
+    cursor: pointer;
+}
+
+mat-chip.mat-chip-with-leading-icon mat-icon.mat-icon:not(.mat-chip-trailing-icon) {
+    margin-left: -8px;
+    padding-right: 8px;
+}
+
+.mat-chip.mat-standard-chip .mat-chip-remove {
+    color: $color-icon-default;
+    opacity: 1;
+}
+
+.mat-form-field-underline {
+    background-color: $color-neutral-02 !important;
+}
+.mat-form-field-outline {
+    color: $color-neutral-02 !important;
+}
+mat-form-field.mat-form-field {
+    &:hover {
+        div.mat-form-field-outline {
+            color: $color-brand-blue-primary !important;
+        }
+    }
+    &.mat-focused {
+        div.mat-form-field-outline {
+            color: $color-brand-blue-primary !important;
+        }
+    }
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    font-size: $size-font-s;
+    color: $color-font-secondary;
+}
+
+mat-form-field.mat-form-field-disabled {
+  div.mat-form-field-outline {
+    color: $color-icon-disabled !important;
+  }
+  &:hover {
+    div.mat-form-field-outline {
+        color: $color-icon-disabled !important;
+    }
+  }
+}
+
+mat-hint.assistive-text {
+    display: block;
+    color: $color-font-secondary;
+    font-size: $size-font-xs;
+    letter-spacing: 0.4px;
+    margin: 4px 0 0 16px;
+}
+
+.mat-menu-panel {
+    margin-top: 2px;
+}
+
+button.mat-menu-item {
+    color: $color-font-primary;
+    text-transform: capitalize;
+}
+
+mat-divider {
+    width: 100%;
+    margin-bottom: 56px;
+    padding-bottom: 24px;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: $color-brand-blue-primary;
+}
+
+mat-sidenav-container.mat-drawer-container {
+    height: 100%;
+}
+
+/* ----------- */
+
+
+main {
+  margin: 24px;
+}
+
+/*** Example Viewer ***/
+div.example-viewer {
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: $color-brand-light-primary;
+  box-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.2);
+
+  div.ev-title {
+    height: 48px;
+    background-color: $color-neutral-01;
+    border-radius: 6px 6px 0 0;
+    border-bottom: $color-neutral-02;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .component-name {
+      line-height: 48px;
+      margin: 0 16px;
+    }
+    div.ev-icon-group {
+      margin: 0 16px;
+      .mat-icon-button .mat-icon {
+        line-height: 20px;
+      }
+      .mat-icon-button:hover .mat-icon {
+        color: $color-icon-active;
+      }
+    }
+  }
+
+  div.ev-component-view {
+    padding: 32px;
+    mat-form-field.mat-form-field {
+      width: 360px;
+    }
+
+    // add box-shadow to Action Bar examples
+    div.actionbar {
+      box-shadow: inset 0 1px 0 0 $color-neutral-02, 0 4px 12px rgba(37,44,58,0.12);
+    }
+  }
+
+  div.ev-component-view.ev-multiple {
+    display: flex;
+    flex: row wrap;
+    > * {
+      margin-right: 40px;
+    }
+  }
+
+  div.ev-code-view {
+    border-radius: 0 0 4px 4px;
+    background-color: $color-neutral-00;
+    box-shadow: 0 1px 2px rgba($color: #000000, $alpha: 0.08);
+
+    h4 {
+      margin: 0;
+      padding: 0 32px;
+    }
+    
+    pre.hljs {
+      font-family: 'Roboto Mono';
+      font-size: 12px;
+      margin: 0;
+      padding: 8px 24px;
+      white-space: pre-wrap;
+      background: $color-neutral-00;
+      .hljs-tag {
+        display: inline-block;
+        margin: 2px 0;
+      }
+    }
+    
+    mat-tab-body.mat-tab-body {
+      padding: 16px 0 0 0;
+    }
+    
+    div.ev-code-block {
+      margin: 8px 0;
+      padding: 8px 0;
+      &:hover {
+        box-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.12);
+        background-color: $color-brand-light-primary;
+        h4 {
+          color: $color-font-primary;
+        }
+        pre.hljs {
+          background-color: $color-brand-light-primary;
+        }
+      }
+    }
+
+    div.ev-code-title-row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 32px;
+      cursor: pointer;
+      h4 {
+        margin: 0;
+        padding: 0 8px;
+      }
+      .mat-icon-button:hover .mat-icon {
+        color: $color-icon-active;
+      }
+    }
+
+    div.ev-code-view-row {
+      max-width: 100%;
+      padding: 8px;
+      margin: 0 0 8px 0;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+@mixin button() {
+  font-family: $button-global-font-family;
+  font-size: $button-global-font-size;
+  letter-spacing: $button-global-letter-spacing;
+  font-weight: $button-global-font-weight;
+  line-height: $button-global-line-height;
+  text-align: $button-global-text-align;
+  height: $button-global-height;
+  padding: $button-global-padding;
+  min-width: $button-global-min-width;
+  text-transform: $button-global-text-transform;
+  border-radius: $button-global-border-radius;
+}
+@mixin button-primary() {
+  color: $button-primary-font-color;
+  background-color: $button-primary-background-color;
+}
+@mixin button-secondary() {
+  color: $button-secondary-font-color;
+  background-color: $button-secondary-background-color;
+  padding: $button-secondary-padding;
+}
+@mixin button-tertiary() {
+  color: $button-tertiary-font-color;
+  background-color: $button-tertiary-background-color;
+}
+@mixin button-outlined() {
+  color: $button-outlined-font-color;
+  line-height: $button-outlined-line-height;
+  background-color: $button-outlined-background-color;
+  border-width: $button-outlined-border-width;
+  border-color: $button-outlined-border-color;
+}
+@mixin button-disabled() {
+  color: $button-disabled-font-color;
+  background-color: $button-disabled-background-color;
+  cursor: default;
+}
+@mixin button-icon() {
+  line-height: $button-icon-line-height;
+  text-align: $button-icon-text-align;
+  height: $button-icon-height;
+  padding: $button-icon-padding;
+  color: $button-icon-color;
+  display: flex;
+  align-items: center;
+  mat-icon.mat-icon {
+    color: $button-icon-color;
+    margin-right: $button-icon-margin;
+    line-height: 20px;
+  }
+  &:hover {
+    background-color: $color-brand-blue-secondary;
+  }
+}
+
+button.mat-flat-button, button.mat-stroked-button, button.mat-button /*:not(button.toolbar-button):not(button.mat-icon-button)*/ {
+  @include button;
+}
+button.button-primary {
+  @include button-primary;
+  &.button-positive {
+    background-color: $color-positive-primary;
+  }
+}
+button.button-secondary {
+  @include button-secondary;
+}
+button.button-tertiary {
+  @include button-tertiary;
+}
+button.mat-stroked-button.button-outlined {
+  @include button-outlined;
+}
+button.button-disabled {
+  @include button-disabled;
+}
+button.button-icon {
+  @include button-icon;
+}
