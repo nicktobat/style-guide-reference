@@ -594,3 +594,85 @@ div.example-viewer {
     }
   }
 }
+
+
+@mixin button() {
+  font-family: $button-global-font-family;
+  font-size: $button-global-font-size;
+  letter-spacing: $button-global-letter-spacing;
+  font-weight: $button-global-font-weight;
+  line-height: $button-global-line-height;
+  text-align: $button-global-text-align;
+  height: $button-global-height;
+  padding: $button-global-padding;
+  min-width: $button-global-min-width;
+  text-transform: $button-global-text-transform;
+  border-radius: $button-global-border-radius;
+}
+@mixin button-primary() {
+  color: $button-primary-font-color;
+  background-color: $button-primary-background-color;
+}
+@mixin button-secondary() {
+  color: $button-secondary-font-color;
+  background-color: $button-secondary-background-color;
+  padding: $button-secondary-padding;
+}
+@mixin button-tertiary() {
+  color: $button-tertiary-font-color;
+  background-color: $button-tertiary-background-color;
+}
+@mixin button-outlined() {
+  color: $button-outlined-font-color;
+  line-height: $button-outlined-line-height;
+  background-color: $button-outlined-background-color;
+  border-width: $button-outlined-border-width;
+  border-color: $button-outlined-border-color;
+}
+@mixin button-disabled() {
+  color: $button-disabled-font-color;
+  background-color: $button-disabled-background-color;
+  cursor: default;
+}
+@mixin button-icon() {
+  line-height: $button-icon-line-height;
+  text-align: $button-icon-text-align;
+  height: $button-icon-height;
+  padding: $button-icon-padding;
+  color: $button-icon-color;
+  display: flex;
+  align-items: center;
+  mat-icon.mat-icon {
+    color: $button-icon-color;
+    margin-right: $button-icon-margin;
+    line-height: 20px;
+  }
+  &:hover {
+    background-color: $color-brand-blue-secondary;
+  }
+}
+
+button.mat-flat-button, button.mat-stroked-button, button.mat-button /*:not(button.toolbar-button):not(button.mat-icon-button)*/ {
+  @include button;
+}
+button.button-primary {
+  @include button-primary;
+  &.button-positive {
+    background-color: $color-positive-primary;
+  }
+}
+button.button-secondary {
+  @include button-secondary;
+}
+button.button-tertiary {
+  @include button-tertiary;
+}
+button.mat-stroked-button.button-outlined {
+  @include button-outlined;
+}
+button.button-disabled {
+  @include button-disabled;
+}
+button.button-icon {
+  @include button-icon;
+}
